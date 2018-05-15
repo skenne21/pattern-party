@@ -1,0 +1,153 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #F2F2F2;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  padding: 10px;
+  background-color: #3F3244;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 2em;
+  color: #F2F2F2;
+}
+
+header p {
+  position: absolute;
+  right: 1em;
+  vertical-align: top;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1.4em;
+  color: #F2F2F2;
+}
+
+header span {
+  margin-left: 20px;
+  color: #34D1D1;
+}
+
+hr {
+  position: relative;
+  left: 101px;
+  top: -45px;
+  width: 87%;
+}
+
+/*accordian section*/
+
+.accordion-tabs__section {
+  position: relative;
+  padding: 1.5em;
+  width: 80%;
+  margin: 5em auto;
+  
+}
+
+.accordion-tabs__section h2 {
+  padding: 15px;
+  background-color: #F2F2F2;
+  font-weight: 300;
+  font-size: 1.3em;
+}
+
+.accordion-tabs__section ul {
+  list-style-type: none;
+  background-color: #F2F2F2;
+  margin: 0;
+}
+
+.tab-list {
+  display: inline-flex;
+  border: 2px solid #D1D2D3;
+  border-top: none;
+  width: 100%;
+  height: 100%;
+}
+
+.tabs-nav {
+  background-color: #D1D2D3;
+  width: 24.8%;
+  padding: 10px;
+  margin: 0;
+  border-top: 2px solid #D1D2D3;
+  border-left: 2px solid #D1D2D3;
+  border-right: 2px solid #D1D2D3;
+  border-bottom: none;
+  vertical-align: top;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: #666666;
+}
+
+.tab-links {
+  width: 100.1%;
+  display: inline-flex;
+  justify-content: space-around;
+  padding-top: 3em;
+}
+
+.accordion-tabs__section img {
+  display: inline-block;
+  margin: auto;
+  height: 300px;
+  width: 300px;
+}
+
+.contents_tab {
+  display: inline-block;
+  width: 60%;
+  padding: 2em;
+  margin: auto;
+}
+
+.contents_tab h1  {
+  display: inline-block;
+  border-bottom:2px solid #D1D2D3; 
+  color: #000000;
+}
+
+.contents_tab p {
+  display: inline-block;
+  color: #666666;
+  font-size: 1.2em;
+}
+
+.contents_tab br {
+  padding-top: 2em;
+}
+
+.active-tab {
+  border-bottom: 2px solid #D1D2D3;
+  border-right: 2px solid #D1D2D3;
+  border-left: 2px solid #D1D2D3;
+  background-color: #F2F2F2;
+}
+
+@media screen and (max-width: 1240px) {
+  .accordion-tabs__section {
+    width: 97%;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .accordion-tabs__section img {
+    width: 250px;
+    height: 250px;
+  }
+}
