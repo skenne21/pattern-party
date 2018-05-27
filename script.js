@@ -5,12 +5,17 @@ $('.tabs-nav').on('click', function(e) {
   e.preventDefault();
   const target = '#' + $(this).attr('href');
   const siblings = $(this).closest('a').siblings().removeClass('active-tab')
+  // $('.tabs-nav').removeClass('active-tab');
   const tabs = $('.tab-list');
   $(this).addClass('active-tab');
   $(tabs).hide();
-  $(target).show()  
+  $(target).show()   
 })
 
 
+const showDropDown = () => {
+  $("#dropdown").toggle("show");
+}
 
-  
+
+ 
